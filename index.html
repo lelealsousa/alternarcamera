@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor de Câmera</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h2>Seletor de Dispositivo de Vídeo</h2>
+
+        <label for="cameras">Câmeras Disponíveis:</label>
+
+        <select id="cameras">
+            <option value="">Carregando câmeras...</option>
+        </select>
+
+        <button id="iniciar">Iniciar Transmissão</button>
+
+        <button id="parar">Parar Câmera</button>
+
+        <div class="tela-camera">
+            <video id="video" autoplay playsinline></video>
+        </div>
+
+        <p id="mensagem"></p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

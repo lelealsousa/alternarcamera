@@ -1,0 +1,100 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #dce4ef, #ffffff);
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: white;
+    width: 450px;
+    padding: 25px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+label {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+select {
+    width: 100%;
+    padding: 9px;
+    margin-bottom: 12px;
+    border: 1px solid #777;
+    border-radius: 4px;
+    background-color: white;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 8px;
+}
+
+#iniciar {
+    background-color: #0c9f50;
+}
+
+#iniciar:hover {
+    background-color: #087b3c;
+}
+
+#parar {
+    background-color: #df302e;
+}
+
+#parar:hover {
+    background-color: #b51e1e;
+}
+
+.tela-camera {
+    width: 100%;
+    height: 250px;
+    background-color: black;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#mensagem {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+    color: #333;
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 95%;
+    }
+}
